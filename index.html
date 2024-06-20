@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <form id="temperatureForm">
+            <div class="input-group">
+                <label for="temperature">Celsius (°C):</label>
+                <input type="number" id="temperature" name="temperature" required>
+            </div>
+            <div class="buttons">
+                <button type="submit">Konversi</button>
+                <button type="reset">Reset</button>
+                <button type="button" id="reverseButton">Reverse</button>
+            </div>
+            <div class="input-group">
+                <label for="resultFahrenheit">Fahrenheit (°F):</label>
+                <input type="number" id="resultFahrenheit" name="resultFahrenheit" readonly>
+            </div>
+        </form>
+        <div id="calculation" class="calculation">
+            <!-- Calculation explanation will be displayed here -->
+        </div>
+        <div id="explanation" class="explanation">
+            <!-- Explanation will be displayed here -->
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
